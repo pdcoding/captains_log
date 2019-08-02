@@ -1,7 +1,8 @@
 //Dependencies
-const express = -require('express');
-const mongoose = require('mongoose');
+const express = require('express');
+console.log(express);
 const app = express();
+const mongoose = require('mongoose');
 
 //Allow Heroku
 const PORT = process.env.PORT || 3000;
