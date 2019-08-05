@@ -2,7 +2,9 @@
 const express = require('express');
 const app = express();
 const mongoose = require('mongoose');
-const Entry = require('./models/entryModel');
+const Entry = require('./models/entryModel.js');
+const logs = require('./scripts/seed.js');
+
 // console.log(express);
 
 //Allow Heroku
@@ -17,7 +19,7 @@ const MONGODB_URI =
 
 //Routes
 app.get('/', (req, res) => {
-  res.send(logs);
+  res.render(logs);
 });
 
 //Connect to Mongo
