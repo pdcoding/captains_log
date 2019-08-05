@@ -21,7 +21,22 @@ const logs = [
     ship: 'USS Voyager',
     entry:
       "We've traced the energy pulses from the array to the fifth planet of the neighboring system..."
+  },
+  {
+    captain: 'Kendrick Zhang',
+    stardate: 48315.6,
+    ship: 'USS Skynet',
+    entry: "We're in the CRUD"
   }
 ];
 
 console.log('file is running ');
+
+const seedDb = () => {
+  Entry.insertMany(logs, (err, collection) => {
+    if (err) console.log(err);
+    console.log('seeded', collection);
+  });
+};
+
+seedDb();
