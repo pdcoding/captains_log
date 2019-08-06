@@ -65,19 +65,14 @@
       </div>
     </nav>
 
-    <ul>
-      <li>Captain: <%=thisEntry.captain%></li>
-      <li>Ship: <%=thisEntry.ship%></li>
-      <li>Stardate: <%=thisEntry.stardate%></li>
-      <li>Entry: <%=thisEntry.entry%></li>
-      <a href="/entries">Back to Archive</a>
-      <br />
-      <a href="/entries/<%=entryId%>/edit">Update</a>
-      <form action="/entries/<%=entryId%>?_method=delete" method="POST">
-        <input type="submit" value="Delete" />
-      </form>
-      <hr />
-    </ul>
+    <form action="/entries/<%=entryId%>?_method=put" method="POST">
+      <input type="text" name="captain" value="<%=thisEntry.captain%>" />
+      <input type="text" name="ship" value="<%=thisEntry.ship%>" />
+      <input type="text" name="stardate" value="<%=thisEntry.stardate%>" />
+      <input type="text" name="entry" value="<%=thisEntry.entry%>" />
+      <input type="submit" value="Update" />
+    </form>
+
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"

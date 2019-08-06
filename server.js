@@ -4,12 +4,14 @@ const app = express();
 const mongoose = require('mongoose');
 const entryController = require('./controllers/entryController');
 const Entry = require('./models/entryModel');
+const methodOverride = require('method-override');
 
 //Allow Heroku
 const PORT = process.env.PORT || 3000;
 
 //middleware
 app.use(express.urlencoded({ extended: true }));
+app.use(methodOverride('_method'));
 app.use('/entries', entryController);
 
 //Routes
@@ -17,17 +19,9 @@ app.use('/entries', entryController);
 //   res.render(logs);
 // });
 
+// This root route is the main page (landing page)
 app.get('/', (req, res) => {
   res.render('index.ejs');
-});
-
-app.get('/records/:id', (req, res) => {
-  // console.log('req.params.id: ', req.params.id);
-  Entry.findById(req.params.id, (err, currentEntry) => {
-    res.render('show.ejs', {
-      thisEntry: currentEntry
-    });
-  });
 });
 
 //Database
