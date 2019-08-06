@@ -1,5 +1,3 @@
-const Entry = require('../models/entryModel');
-
 const logs = [
   {
     captain: 'Jean-Luc Picard',
@@ -24,13 +22,4 @@ const logs = [
   }
 ];
 
-console.log('file is running ');
-
-const seedDb = () => {
-  Entry.insertMany(logs, (err, collection) => {
-    if (err) console.log(err);
-    console.log('seeded', collection);
-  });
-};
-
-seedDb();
+module.exports = logs;

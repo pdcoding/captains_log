@@ -2,8 +2,8 @@ const mongoose = require('mongoose');
 
 const entrySchema = new mongoose.Schema({
   captain: { type: String },
-  stardate: { type: Number },
   ship: { type: String },
+  stardate: { type: Number },
   entry: { type: String }
 });
 
