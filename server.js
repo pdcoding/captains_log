@@ -3,7 +3,6 @@ const express = require('express');
 const app = express();
 const mongoose = require('mongoose');
 const entryController = require('./controllers/entryController');
-const Entry = require('./models/entryModel');
 const methodOverride = require('method-override');
 
 //Allow Heroku
@@ -11,6 +10,7 @@ const PORT = process.env.PORT || 3000;
 
 //middleware
 app.use(express.urlencoded({ extended: true }));
+app.use(express.static(__dirname + '/public'));
 app.use(methodOverride('_method'));
 app.use('/entries', entryController);
 

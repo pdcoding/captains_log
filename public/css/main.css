@@ -1,0 +1,19 @@
+@font-face {
+  font-family: 'Pcap';
+  src: url('../pixel-sagas_pcap-terminal/PcapTerminal-BO9B.ttf');
+}
+
+.main {
+  background-image: url('https://images.unsplash.com/photo-1506318137071-a8e063b4bec0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1540&q=80');
+}
+
+.main-content {
+  background-color: grey;
+  opacity: 0.4;
+  color: yellow;
+  margin: 30px;
+}
+
+.archive {
+  font-family: 'Pcap';
+}
