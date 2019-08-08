@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const entrySchema = new mongoose.Schema({
   captain: { type: String },
   ship: { type: String },
-  stardate: { type: Number },
+  stardate: { type: String },
   entry: { type: String }
 });
 

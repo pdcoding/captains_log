@@ -11,9 +11,9 @@
     <link rel="stylesheet" type="text/css" href="/css/main.css" />
     <title>Captain's Log</title>
   </head>
-  <body>
-      <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-          <a class="navbar-brand" href="#">Captain's Log</a>
+  <body class="new">
+      <nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top">
+          <a class="navbar-brand" href="/">Captain's Log</a>
           <button
             class="navbar-toggler"
             type="button"
@@ -28,7 +28,7 @@
   
           <div class="collapse navbar-collapse" id="navbarsExample03">
             <ul class="navbar-nav mr-auto">
-              <li class="nav-item active">
+              <li class="nav-item">
                 <a class="nav-link" href="/"
                   >Main <span class="sr-only">(current)</span></a
                 >
@@ -65,15 +65,20 @@
             </ul>
           </div>
         </nav>
+        <div class='new-content'>
         <h3>New Entry</h3>
     <form action="/entries" , method="POST">
-      <input type="text" name="captain" placeholder="Captain" />
-      <input type="text" name="ship" placeholder="Ship" />
-      <input type="text" name="stardate" placeholder="Stardate" />
+      <input type="text" name="captain" placeholder="Subject name" />
+      <hr>
+      <input type="text" name="ship" placeholder="Vessel" />
+      <hr>
+      <input type="text" name="stardate" placeholder="Date" />
+      <hr>
       <input type="text" name="entry" placeholder="Entry" />
-      <br>
+      <hr>
       <input type="submit" value="Create new post" />
     </form>
+    </div>
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"

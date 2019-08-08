@@ -1,7 +1,7 @@
 const express = require('express');
 const entryRouter = express.Router();
 const entryModel = require('../models/entryModel');
-const seedData = require('../models/seed');
+// const seedData = require('../models/seed');
 
 // Seed route
 // entryRouter.get('/seed', (req, res) => {
@@ -32,7 +32,12 @@ entryRouter.post('/', (req, res) => {
     }
 
     console.log('Successfully Created', newEntry);
-    res.send(newEntry);
+    entryModel.find({}, (err, everything) => {
+      if (err) console.log(err);
+      res.render('archive.ejs', {
+        entryData: everything
+      });
+    });
   });
 });
 

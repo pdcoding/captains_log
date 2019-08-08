@@ -15,8 +15,8 @@
   </head>
   <body class="archive">
     <div id="archive">
-      <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">Captain's Log</a>
+      <nav class="navbar navbar-expand-sm navbar-dark bg-dark stickt-top">
+        <a class="navbar-brand" href="/">Captain's Log</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -31,7 +31,7 @@
 
         <div class="collapse navbar-collapse" id="navbarsExample03">
           <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
+            <li class="nav-item">
               <a class="nav-link" href="/"
                 >Main <span class="sr-only">(current)</span></a
               >
@@ -69,12 +69,12 @@
         </div>
       </nav>
 
-      <ul class="">
+      <ul class="archive-content">
         <%entryData.forEach( (data)=> {%>
-        <li>Captain: <%=data.captain%></li>
-        <li>Ship: <%=data.ship%></li>
+        <li><%=data.captain%></li>
+        <!-- <li>Ship: <%=data.ship%></li>
         <li>Stardate: <%=data.stardate%></li>
-        <li>Entry: <%=data.entry%></li>
+        <li>Entry: <%=data.entry%></li> -->
         <a href="/entries/<%= data._id %>">more info</a>
         <hr />
         <% }) %>

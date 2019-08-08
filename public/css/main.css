@@ -1,19 +1,79 @@
-@font-face {
+/* @font-face {
   font-family: 'Pcap';
   src: url('../pixel-sagas_pcap-terminal/PcapTerminal-BO9B.ttf');
-}
+} */
 
 .main {
   background-image: url('https://images.unsplash.com/photo-1506318137071-a8e063b4bec0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1540&q=80');
+  background-attachment: fixed;
+  font-family: 'Bajoran';
 }
 
 .main-content {
-  background-color: grey;
-  opacity: 0.4;
-  color: yellow;
+  /* background-color: grey;
+  opacity: 0.4; */
+  /* color: yellow; */
   margin: 30px;
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
 }
 
 .archive {
-  font-family: 'Pcap';
+  font-family: 'Bajoran';
+  background-image: url('https://i.imgur.com/xn41zBd.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.archive-content {
+  /* background-color: grey; */
+  /* text-shadow: 0 0 3px #ff0000, 0 0 5px #0000ff; */
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+  margin: 10px;
+  /* opacity: 0.4; */
+}
+
+.entry {
+  font-family: 'Bajoran';
+}
+
+.new {
+  font-family: 'Bajoran';
+  background-image: url('https://i.imgur.com/Zd4ZAmyh.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.new-content {
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+  margin: 10px;
+}
+
+.show {
+  font-family: 'Bajoran';
+  background-image: url('https://i.imgur.com/06x0XMJh.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.show-content {
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+  margin: 10px;
+}
+
+.entry {
+  font-family: 'Bajoran';
+  background-image: url('https://i.imgur.com/WD75kSPh.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.entry-content {
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+  margin: 10px;
 }
