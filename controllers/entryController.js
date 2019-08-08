@@ -1,14 +1,14 @@
 const express = require('express');
 const entryRouter = express.Router();
 const entryModel = require('../models/entryModel');
-// const seedData = require('../models/seed');
+const seedData = require('../models/seed');
 
 // Seed route
-// entryRouter.get('/seed', (req, res) => {
-//   entryModel.create(seedData, () => {
-//     res.redirect('/entries');
-//   });
-// });
+entryRouter.get('/seed', (req, res) => {
+  entryModel.create(seedData, () => {
+    res.redirect('/entries');
+  });
+});
 
 entryRouter.get('/new', (req, res) => {
   res.render('new.ejs');
