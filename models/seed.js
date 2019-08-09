@@ -91,6 +91,13 @@ const logs = [
     ship: "Queen Anne's Revenge",
     entry:
       "First, your return to shore was not part of our negotiations nor our agreement, so I must do nothing. And secondly, you must be a pirate for the Pirate's Code to apply, and you're not. And thirdly, the Code is more what you'd call guidelines than actual rules. Welcome aboard the Black Pearl."
+  },
+  {
+    captain: 'Kurn, son of Mogh',
+    stardate: 'Federation Stardate 2367',
+    ship: "IKS Hegh'ta",
+    entry:
+      "When Kurn reached the Age of Ascension, Lorgh told Kurn about his true family bloodlines, however publicly Kurn's bloodlines were kept hidden. Kurn joined the Klingon Defense Force, and by 2366 he had reached the rank of Commander and was serving on a Klingon vessel as first officer. "
   }
   // {
   //   captain: '',
